@@ -1,0 +1,113 @@
+.dark-menu {
+    min-width: 48px !important;
+    background-color: #4d4d4d !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    .el-popover__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .el-popover__select {
+            padding: 0 8px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 4px;
+            &:hover {
+                background-color: $--color-text-primary;
+            }
+        }
+    }
+    .popper__arrow::after {
+        border-left-color: #4d4d4d !important;
+        border-right-color: #4d4d4d !important;
+    }
+}
+.hoverClass {
+    .el-popover__content {
+        padding: 0;
+    }
+    .el-popover__content--large {
+        padding: 0;
+    }
+    .order-container {
+        width: 314px;
+        &:hover {
+            background: rgba(5, 61, 200, 0.02);
+            border-radius: 4px 4px 0 0;
+        }
+    }
+}
+$--calendar-border-color: #ebeffa;
+$--calendar-border-head-color: #e8eaed;
+$--calendar-border-body-color: #dfe3ed;
+$--background-accommodation-checkout: mix(#999999, $--color-white, 50%);
+$--background-accommodation-bepaid: mix(#F5222D, $--color-white, 50%);
+$--background-accommodation-confirm: mix(#7ED322, $--color-white, 50%);
+$--background-accommodation-book: mix(#FFA866, $--color-white, 50%);
+$--background-accommodation-checkin: mix(#66BDFF, $--color-white, 50%);
+.calendar-border {
+    border: 1px solid $--calendar-border-color;
+}
+.calendar-border-r {
+    border-right: 1px solid $--calendar-border-color;
+}
+.calendar-border-body-r {
+    border-right: 1px solid $--calendar-border-body-color;
+}
+.calendar-border-head-r {
+    border-right: 1px solid $--calendar-border-head-color;
+}
+.calendar-border-t {
+    //border-top: 1px solid $--calendar-border-color;
+    border-top: 1px solid $--calendar-border-head-color;
+}
+.calendar-border-l {
+    //border-left: 1px solid $--calendar-border-color;
+    border-left: 1px solid $--calendar-border-head-color;
+}
+.calendar-border-b {
+    //border-bottom: 1px solid $--calendar-border-color;
+    border-bottom: 1px solid $--calendar-border-head-color;
+}
+.calendar-border-body-b {
+    border-bottom: 1px solid $--calendar-border-body-color;
+}
+// 订单颜色
+// 待确认
+.order-new-color {
+    //background: $--color-success-lighter;
+    background: $--background-accommodation-confirm;
+}
+// 待付款
+.order-pay-color {
+    //background: $--color-danger-lighter;
+    background: $--background-accommodation-bepaid;
+}
+// 已预订
+.order-book-color {
+    //background: mix(#ffa866, $--color-white, 10%);
+    background: $--background-accommodation-book;
+}
+// 已入住
+.order-in-color {
+    //background: mix(#66bdff, $--color-white, 10%);
+    background: $--background-accommodation-checkin;
+}
+// 已退房 脏房 关房
+.order-out-color {
+    //background: #eee;
+    background: $--background-accommodation-checkout;
+}
+
+.calendar-room-contain__background {
+    background: $--background-accommodation-checkout;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
